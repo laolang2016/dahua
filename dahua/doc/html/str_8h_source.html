@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>dahua: /home/laolang/git/dahua/dahua/include/str/str.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dahua
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('str_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">str.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="str_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef STR_STR_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define STR_STR_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&quot;../../include/global/global.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#define DEFAULT_LENGTH 50</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//#define DEFAULT_EXPAND 0.75</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct____str.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct____str.html">__str</a>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct____str.html#a571df823b8725b7ace1a67497e14648f">   32</a></span>&#160;    <span class="keywordtype">char</span> * <a class="code" href="struct____str.html#a571df823b8725b7ace1a67497e14648f">data</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//  /** @brief 数组容量</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//   * </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//   */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//  int length;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct____str.html#a05680d04aea86e349c7b67764a7597df">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct____str.html#a05680d04aea86e349c7b67764a7597df">size</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct____str.html#a7b4c48bba7f96ee8aa08d6768324162f">   47</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct____str.html#a7b4c48bba7f96ee8aa08d6768324162f">expand</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="str_8h.html#aa6fe663d24e65178cc8de87523eabb1d">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____str.html">__str</a> <a class="code" href="struct____str.html">_str</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____str.html">__str</a> * <a class="code" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//StrAssign(T,*chars) : 生成一个其值等于字符串常量cahrs的串Ｔ</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;String <a class="code" href="str_8h.html#a7bb788d1888c95888c270160906b4659">str_assign</a>( <span class="keywordtype">char</span> * chars );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="str_8h.html#a2ba31201172cbcf28706fccea1ae3696">str_expand</a>( String <span class="keywordtype">string</span> );</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;String <a class="code" href="str_8h.html#ae2dcdc7720fdcea272a81fcbe2e14adf">str_copy</a>(String <span class="keywordtype">string</span> );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="str_8h.html#a775267ae8cc3522241985c190d039a5f">str_clear</a>(String <span class="keywordtype">string</span> );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="str_8h.html#a4cd20c2a47a4664c8562ec582561fab8">str_is_empty</a>(String <span class="keywordtype">string</span> );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">int</span> <a class="code" href="str_8h.html#a2065ff66a81f648b516c57dff54d25a7">str_size</a>(String <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">int</span> <a class="code" href="str_8h.html#a859a35a7f281c5424153aca86f82c453">str_compare</a>(String str1, String str2);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;String <a class="code" href="str_8h.html#a36b90ee43a6344de85fc3e51b2b96c0d">str_concat</a>(String str1, String str2 );</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;String <a class="code" href="str_8h.html#a236b399104c543782e59cbae48239158">str_sub</a>( String <span class="keywordtype">string</span>, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;String <a class="code" href="str_8h.html#a31512e0c3c65b19057405220124c7119">str_insert</a>(String <span class="keywordtype">string</span>, <span class="keywordtype">int</span> pos, String in );</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;String <a class="code" href="str_8h.html#ab03e4f9b6121ca38221d6120805d202a">str_delete</a>(String <span class="keywordtype">string</span>, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">int</span> <a class="code" href="str_8h.html#a5402c7c8bdf2756146eed5f1045cfdb7">str_index</a>( String <span class="keywordtype">string</span> , String t, <span class="keywordtype">int</span> pos );</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;String <a class="code" href="str_8h.html#a7b94841847e5860b3ff6e41bd3e31afb">str_replace</a>(String <span class="keywordtype">string</span>, String t, String v);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">//Replace(S,T,V): 串Ｓ、Ｔ和Ｖ存在，Ｔ是非空串。用Ｖ替换主串Ｓ中出现的所有与串Ｔ相等的不重叠的子串</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STR_STR_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="str_8h_html_ae2dcdc7720fdcea272a81fcbe2e14adf"><div class="ttname"><a href="str_8h.html#ae2dcdc7720fdcea272a81fcbe2e14adf">str_copy</a></div><div class="ttdeci">String str_copy(String string)</div><div class="ttdoc">由串string复制得到一个新串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00073">str.c:73</a></div></div>
+<div class="ttc" id="str_8h_html_a7b94841847e5860b3ff6e41bd3e31afb"><div class="ttname"><a href="str_8h.html#a7b94841847e5860b3ff6e41bd3e31afb">str_replace</a></div><div class="ttdeci">String str_replace(String string, String t, String v)</div><div class="ttdoc">将串string中所有与串t相等的不重叠的子串替换为串v </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00407">str.c:407</a></div></div>
+<div class="ttc" id="struct____str_html_a7b4c48bba7f96ee8aa08d6768324162f"><div class="ttname"><a href="struct____str.html#a7b4c48bba7f96ee8aa08d6768324162f">__str::expand</a></div><div class="ttdeci">double expand</div><div class="ttdoc">数组扩充比例 </div><div class="ttdef"><b>Definition:</b> <a href="str_8h_source.html#l00047">str.h:47</a></div></div>
+<div class="ttc" id="str_8h_html_ab03e4f9b6121ca38221d6120805d202a"><div class="ttname"><a href="str_8h.html#ab03e4f9b6121ca38221d6120805d202a">str_delete</a></div><div class="ttdeci">String str_delete(String string, int pos, int len)</div><div class="ttdoc">在串string中，从第pos个字符开始删除长度为len的子串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00308">str.c:308</a></div></div>
+<div class="ttc" id="str_8h_html_a2ba31201172cbcf28706fccea1ae3696"><div class="ttname"><a href="str_8h.html#a2ba31201172cbcf28706fccea1ae3696">str_expand</a></div><div class="ttdeci">STATUS str_expand(String string)</div><div class="ttdoc">串数组扩容 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00048">str.c:48</a></div></div>
+<div class="ttc" id="global_8h_html_a0cb9c7fae5afe4237eb4d5d43318fa18"><div class="ttname"><a href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a></div><div class="ttdeci">int STATUS</div><div class="ttdoc">返回状态类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00024">global.h:24</a></div></div>
+<div class="ttc" id="str_8h_html_a775267ae8cc3522241985c190d039a5f"><div class="ttname"><a href="str_8h.html#a775267ae8cc3522241985c190d039a5f">str_clear</a></div><div class="ttdeci">STATUS str_clear(String string)</div><div class="ttdoc">将串string清空 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00088">str.c:88</a></div></div>
+<div class="ttc" id="str_8h_html_a859a35a7f281c5424153aca86f82c453"><div class="ttname"><a href="str_8h.html#a859a35a7f281c5424153aca86f82c453">str_compare</a></div><div class="ttdeci">int str_compare(String str1, String str2)</div><div class="ttdoc">比较两人个串的大小 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00146">str.c:146</a></div></div>
+<div class="ttc" id="str_8h_html_a4cd20c2a47a4664c8562ec582561fab8"><div class="ttname"><a href="str_8h.html#a4cd20c2a47a4664c8562ec582561fab8">str_is_empty</a></div><div class="ttdeci">BOOL str_is_empty(String string)</div><div class="ttdoc">判断串string是否为空串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00110">str.c:110</a></div></div>
+<div class="ttc" id="str_8h_html_a5402c7c8bdf2756146eed5f1045cfdb7"><div class="ttname"><a href="str_8h.html#a5402c7c8bdf2756146eed5f1045cfdb7">str_index</a></div><div class="ttdeci">int str_index(String string, String t, int pos)</div><div class="ttdoc">查找串string中第pos个字符后，串t第一次出现的位置 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00350">str.c:350</a></div></div>
+<div class="ttc" id="struct____str_html_a05680d04aea86e349c7b67764a7597df"><div class="ttname"><a href="struct____str.html#a05680d04aea86e349c7b67764a7597df">__str::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">数组容量 </div><div class="ttdef"><b>Definition:</b> <a href="str_8h_source.html#l00042">str.h:42</a></div></div>
+<div class="ttc" id="str_8h_html_a31512e0c3c65b19057405220124c7119"><div class="ttname"><a href="str_8h.html#a31512e0c3c65b19057405220124c7119">str_insert</a></div><div class="ttdeci">String str_insert(String string, int pos, String in)</div><div class="ttdoc">在串string的第pos个位置插入串in </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00256">str.c:256</a></div></div>
+<div class="ttc" id="str_8h_html_a2065ff66a81f648b516c57dff54d25a7"><div class="ttname"><a href="str_8h.html#a2065ff66a81f648b516c57dff54d25a7">str_size</a></div><div class="ttdeci">int str_size(String string)</div><div class="ttdoc">得到串string的长度 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00130">str.c:130</a></div></div>
+<div class="ttc" id="str_8h_html_a236b399104c543782e59cbae48239158"><div class="ttname"><a href="str_8h.html#a236b399104c543782e59cbae48239158">str_sub</a></div><div class="ttdeci">String str_sub(String string, int pos, int len)</div><div class="ttdoc">从串string中的第pos个字符取出长度为len的子串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00217">str.c:217</a></div></div>
+<div class="ttc" id="str_8h_html_a7bb788d1888c95888c270160906b4659"><div class="ttname"><a href="str_8h.html#a7bb788d1888c95888c270160906b4659">str_assign</a></div><div class="ttdeci">String str_assign(char *chars)</div><div class="ttdoc">根据字符串常量chars生成一个串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00020">str.c:20</a></div></div>
+<div class="ttc" id="struct____str_html"><div class="ttname"><a href="struct____str.html">__str</a></div><div class="ttdef"><b>Definition:</b> <a href="str_8h_source.html#l00028">str.h:28</a></div></div>
+<div class="ttc" id="str_8h_html_a36b90ee43a6344de85fc3e51b2b96c0d"><div class="ttname"><a href="str_8h.html#a36b90ee43a6344de85fc3e51b2b96c0d">str_concat</a></div><div class="ttdeci">String str_concat(String str1, String str2)</div><div class="ttdoc">链接两人个字符串返回新的字符串 </div><div class="ttdef"><b>Definition:</b> <a href="str_8c_source.html#l00170">str.c:170</a></div></div>
+<div class="ttc" id="struct____str_html_a571df823b8725b7ace1a67497e14648f"><div class="ttname"><a href="struct____str.html#a571df823b8725b7ace1a67497e14648f">__str::data</a></div><div class="ttdeci">char * data</div><div class="ttdoc">串数组指针 </div><div class="ttdef"><b>Definition:</b> <a href="str_8h_source.html#l00032">str.h:32</a></div></div>
+<div class="ttc" id="global_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdoc">布尔类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00027">global.h:27</a></div></div>
+<div class="ttc" id="str_8h_html_ae2d9c226b5ae3d8e779f347f69cde020"><div class="ttname"><a href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a></div><div class="ttdeci">struct __str * String</div><div class="ttdoc">串结构指针类型 </div><div class="ttdef"><b>Definition:</b> <a href="str_8h_source.html#l00059">str.h:59</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_12a29308a3ca0a8ce961682827dd1d6d.html">str</a></li><li class="navelem"><a class="el" href="str_8h.html">str.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

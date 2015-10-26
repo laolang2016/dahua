@@ -1,0 +1,535 @@
+.TH "/home/laolang/git/dahua/dahua/include/str/str.h" 3 "2015年 十月 26日 星期一" "Version 1.0" "dahua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/laolang/git/dahua/dahua/include/str/str.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./include/global/global\&.h'\fP
+.br
+
+.SS "结构体"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__str\fP"
+.br
+.in -1c
+.SS "类型定义"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__str\fP \fB_str\fP"
+.br
+.RI "\fI串结构类型 \fP"
+.ti -1c
+.RI "typedef struct \fB__str\fP * \fBString\fP"
+.br
+.RI "\fI串结构指针类型 \fP"
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "\fBString\fP \fBstr_assign\fP (char *chars)"
+.br
+.RI "\fI根据字符串常量chars生成一个串 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBstr_expand\fP (\fBString\fP string)"
+.br
+.RI "\fI串数组扩容 \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_copy\fP (\fBString\fP string)"
+.br
+.RI "\fI由串string复制得到一个新串 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBstr_clear\fP (\fBString\fP string)"
+.br
+.RI "\fI将串string清空 \fP"
+.ti -1c
+.RI "\fBBOOL\fP \fBstr_is_empty\fP (\fBString\fP string)"
+.br
+.RI "\fI判断串string是否为空串 \fP"
+.ti -1c
+.RI "int \fBstr_size\fP (\fBString\fP string)"
+.br
+.RI "\fI得到串string的长度 \fP"
+.ti -1c
+.RI "int \fBstr_compare\fP (\fBString\fP str1, \fBString\fP str2)"
+.br
+.RI "\fI比较两人个串的大小 \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_concat\fP (\fBString\fP str1, \fBString\fP str2)"
+.br
+.RI "\fI链接两人个字符串返回新的字符串 \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_sub\fP (\fBString\fP string, int pos, int len)"
+.br
+.RI "\fI从串string中的第pos个字符取出长度为len的子串 \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_insert\fP (\fBString\fP string, int pos, \fBString\fP in)"
+.br
+.RI "\fI在串string的第pos个位置插入串in \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_delete\fP (\fBString\fP string, int pos, int len)"
+.br
+.RI "\fI在串string中，从第pos个字符开始删除长度为len的子串 \fP"
+.ti -1c
+.RI "int \fBstr_index\fP (\fBString\fP string, \fBString\fP t, int pos)"
+.br
+.RI "\fI查找串string中第pos个字符后，串t第一次出现的位置 \fP"
+.ti -1c
+.RI "\fBString\fP \fBstr_replace\fP (\fBString\fP string, \fBString\fP t, \fBString\fP v)"
+.br
+.RI "\fI将串string中所有与串t相等的不重叠的子串替换为串v \fP"
+.in -1c
+.SH "详细描述"
+.PP 
+串结构及操作定义
+.PP
+Created on: 2015年10月25日 Author: laolang 
+.PP
+在文件 \fBstr\&.h\fP 中定义\&.
+.SH "类型定义说明"
+.PP 
+.SS "typedef struct \fB__str\fP \fB_str\fP"
+
+.PP
+串结构类型 
+.PP
+在文件 str\&.h 第 54 行定义\&.
+.SS "typedef struct \fB__str\fP* \fBString\fP"
+
+.PP
+串结构指针类型 
+.PP
+在文件 str\&.h 第 59 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "\fBString\fP str_assign (char * chars)"
+
+.PP
+根据字符串常量chars生成一个串 
+.PP
+\fB参数:\fP
+.RS 4
+\fIchars\fP 字符串常量 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+返回生成的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 创建串失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 20 行定义\&.
+.PP
+参考 __str::data\&.
+.PP
+参考自 main() , 以及 str_copy()\&.
+.SS "\fBSTATUS\fP str_clear (\fBString\fP string)"
+
+.PP
+将串string清空 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string存在 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 要清空的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 操作成功 
+.br
+\fIERROR\fP 操作失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 88 行定义\&.
+.PP
+参考 __str::data , 以及 OK\&.
+.PP
+参考自 main()\&.
+.SS "int str_compare (\fBString\fP str1, \fBString\fP str2)"
+
+.PP
+比较两人个串的大小 
+.PP
+\fB参数:\fP
+.RS 4
+\fIstr1\fP 串１ 
+.br
+\fIstr2　串２\fP 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fI-1\fP str1 < str2 
+.br
+\fI0\fP str2 = str2 
+.br
+\fI1\fP str1 > str2 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 146 行定义\&.
+.PP
+参考 __str::data\&.
+.PP
+参考自 main()\&.
+.SS "\fBString\fP str_concat (\fBString\fP str1, \fBString\fP str2)"
+
+.PP
+链接两人个字符串返回新的字符串 
+.PP
+\fB前置条件:\fP
+.RS 4
+两人个串存在且不为空 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstr1\fP 串１ 
+.br
+\fIstr2　串２\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+新的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 链接失败！ 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 170 行定义\&.
+.PP
+参考 __str::data, __str::size , 以及 str_is_empty()\&.
+.PP
+参考自 main()\&.
+.SS "\fBString\fP str_copy (\fBString\fP string)"
+
+.PP
+由串string复制得到一个新串 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string 存在 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 源串 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+新的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 复制失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 73 行定义\&.
+.PP
+参考 __str::data, __str::size , 以及 str_assign()\&.
+.PP
+参考自 main()\&.
+.SS "\fBString\fP str_delete (\fBString\fP string, int pos, int len)"
+
+.PP
+在串string中，从第pos个字符开始删除长度为len的子串 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string存在且不为空 
+.PP
+pos应满足：0 <= pos && pos <= string->size - 1 
+.PP
+len 应满足：1 <= len && len <= string->size - pos
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 源串 
+.br
+\fIpos　删除的起始位置\fP 
+.br
+\fIlen　要删除的子串的长度\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+　删除子串后的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 删除失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 308 行定义\&.
+.PP
+参考 __str::data , 以及 __str::size\&.
+.PP
+参考自 main()\&.
+.SS "\fBSTATUS\fP str_expand (\fBString\fP string)"
+
+.PP
+串数组扩容 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 要扩容的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 扩容成功 
+.br
+\fIERROR\fP 扩容失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 48 行定义\&.
+.PP
+参考 __str::data, __str::expand, OK , 以及 __str::size\&.
+.SS "int str_index (\fBString\fP string, \fBString\fP t, int pos)"
+
+.PP
+查找串string中第pos个字符后，串t第一次出现的位置 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string 和 串t存在 
+.PP
+pos满足 0<= pos && pos <= string->size - t->size 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 主串 
+.br
+\fIt　要查找的串\fP 
+.br
+\fIpos　查找的起始位置\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+　t第一次出现的位置 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fI0\fP 未找到 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 350 行定义\&.
+.PP
+参考 __str::data, FALSE, __str::size , 以及 TRUE\&.
+.PP
+参考自 main() , 以及 str_replace()\&.
+.SS "\fBString\fP str_insert (\fBString\fP string, int pos, \fBString\fP in)"
+
+.PP
+在串string的第pos个位置插入串in 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string和in存在且不为空
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 源串 
+.br
+\fIpos　要在源口中中插入串的位置\fP 
+.br
+\fIin　要插入的串\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+　返回新的串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 插入失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 256 行定义\&.
+.PP
+参考 __str::data , 以及 __str::size\&.
+.PP
+参考自 main()\&.
+.SS "\fBBOOL\fP str_is_empty (\fBString\fP string)"
+
+.PP
+判断串string是否为空串 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 要判断的串
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fITRUE\fP 为空 
+.br
+\fIFALSE\fP 不为空 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 110 行定义\&.
+.PP
+参考 __str::data, FALSE, __str::size , 以及 TRUE\&.
+.PP
+参考自 main() , 以及 str_concat()\&.
+.SS "\fBString\fP str_replace (\fBString\fP string, \fBString\fP t, \fBString\fP v)"
+
+.PP
+将串string中所有与串t相等的不重叠的子串替换为串v 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string,t,v存在且不为空
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 主串 
+.br
+\fIt\fP 被替换的子串 
+.br
+\fIv\fP 替换的串 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+　替换后的新串 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 407 行定义\&.
+.PP
+参考 __str::data, __str::size , 以及 str_index()\&.
+.PP
+参考自 main()\&.
+.SS "int str_size (\fBString\fP string)"
+
+.PP
+得到串string的长度 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string 存在 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 要计算长度的串 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+串string的长度 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fI-1\fP 操作失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 130 行定义\&.
+.PP
+参考 __str::data\&.
+.PP
+参考自 main()\&.
+.SS "\fBString\fP str_sub (\fBString\fP string, int pos, int len)"
+
+.PP
+从串string中的第pos个字符取出长度为len的子串 
+.PP
+\fB前置条件:\fP
+.RS 4
+串string存在 
+.PP
+pos 满足：0 <= pos <= string->size - 1 
+.PP
+len 满足：0 <= len <= string->size - pos 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIstring\fP 源串 
+.br
+\fIpos\fP 取子串的起始位置 
+.br
+\fIlen\fP 要取的子串的长度 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+取出的子串 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 取子串失败 
+.RE
+.PP
+
+.PP
+在文件 str\&.c 第 217 行定义\&.
+.PP
+参考 __str::data , 以及 __str::size\&.
+.PP
+参考自 main()\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 dahua 的 源代码自动生成\&.

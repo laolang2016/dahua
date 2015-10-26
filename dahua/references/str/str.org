@@ -1,0 +1,17 @@
+ADT串
+Data 
+    串中元素仅由一个字符组成，相邻元素具有阄驱和后继关系
+Operatoin
+    StrAssign(T,*chars) : 生成一个其值等于字符串常量cahrs的串Ｔ
+    StrCopy(T,S) : 串Ｓ存在，由串Ｓ复制得串Ｔ
+    ClearString(S): 串Ｓ存在，将串清空
+    StringEmpty(S) : 若串Ｓ为空，返回true，否则返回false
+    StrLength(S): 返回串Ｓ的元素个数，即串的长度
+    StrCompare(S,T):若Ｓ>Ｔ，返回值>0，若Ｓ＝Ｔ，返回０，若Ｓ<Ｔ,返回值<０
+    Concat(T,S1,S2): 用Ｔ返回由S1和S2联接而成的新串
+    SubString(Sub,S,pos,len):串Ｓ存在，1<= pos <= StrLength(S),且0<=len<=StrLength(S)-pos+1，用sub返回串Ｓ的第pos个字符起长度为len的子串
+    Index(S,T,pos): 串Ｓ和Ｔ存在，Ｔ是非空串，1<=pos<=StrLength(S)。若主串Ｓ中存在在和串Ｔ值相同的子串，则返回它在主串Ｓ中第pos个字符串之后第一次出现的位置，否则返回０
+    Replace(S,T,V): 串Ｓ、Ｔ和Ｖ存在，Ｔ是非空串。用Ｖ替换主串Ｓ中出现的所有与串Ｔ相等的不重叠的子串
+    StrInsert(S,pos,T): 串Ｓ和Ｔ存在，1<=pos<=StrLength(S)+1。在串Ｓ的第pos个字符之前插入串Ｔ
+    StrDelete(S,pos,len): 串Ｓ存在，1<=pos<=StrLength(S)-len+1。从串Ｓ中删除第pos个字符起长度为len的子串
+endADT

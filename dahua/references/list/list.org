@@ -1,0 +1,26 @@
+* 线性表
+** 线性表基本操作
+ADT 线性表(List)
+Data
+    线性表的数据对象集合为(a1,a2,a3,...,an)，每个元素的数据类型均为DataType。其中，除第一个元素a1外，每一个元素有且只有一个直接前驱元素，除了最后一个元素an外，每一个元素有且只有一个直接后继元素。数据元素之间的关系是一对一的关系。
+
+Operation
+    InitList(*L);         初始化操作，建立一个空的线性表 L。
+    ListEmpty(L);         若线性表为空，返回true，否则返回false
+    ClearList(*L);        将线性表清空
+    GetElem(L,i,*e);      将纯属表L中的第ｉ个位置元素值返回给ｅ。
+    LocateELem(L,e);      在线性表L中查找与给定值ｅ相等的元素，如果查找成功，返回该元素在表中序号表示成功，否则返回0表示失败。
+    ListInsert(*L,i,e);   在线性表L中的第ｉ个位置插入新元素ｅ。
+    ListDelete(*L,i,*e)   删除线性表L中第ｉ个位置元素，并用ｅ返回其值。
+    ListLength(L)         返回线性表L的元素的个数。
+endADT
+** 顺序实现
+*** 顺序实现定义
+typedef int ElementType;
+typedef struct{
+    ElemType *data;//数组指针
+    int length;//数组总长度
+    int size;//数据长度
+    double expand;//扩容比例(默认为0.75)
+}ArrayList;
+

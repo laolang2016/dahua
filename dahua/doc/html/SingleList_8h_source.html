@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>dahua: /home/laolang/git/dahua/dahua/include/list/SingleList.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dahua
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('SingleList_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SingleList.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="SingleList_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef LIST_SINGLELIST_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define LIST_SINGLELIST_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;../element/element.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&quot;../global/global.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct____signlelsit.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct____signlelsit.html">__signlelsit</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct____signlelsit.html#aa2538454c4dc9c91ed1176b93780dd8e">   20</a></span>&#160;    <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> <a class="code" href="struct____signlelsit.html#aa2538454c4dc9c91ed1176b93780dd8e">data</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct____signlelsit.html#a59cb1c695f46fb85ce15bde138183452">   25</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct____signlelsit.html">__signlelsit</a> *<a class="code" href="struct____signlelsit.html#a59cb1c695f46fb85ce15bde138183452">next</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="SingleList_8h.html#a5f72d0ad789d068597e26cd7f98e2ce0">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____signlelsit.html">__signlelsit</a> <a class="code" href="struct____signlelsit.html">_node</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="SingleList_8h.html#a7d23732b8673344b8b9a9e2c0216dd5c">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____signlelsit.html">__signlelsit</a> <a class="code" href="struct____signlelsit.html">signleList</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="SingleList_8h.html#a2eaef8c0bfa3a199b6c9e8823042e381">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____signlelsit.html">__signlelsit</a> * <a class="code" href="SingleList_8h.html#a2eaef8c0bfa3a199b6c9e8823042e381">signleListPtr</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;signleListPtr <a class="code" href="SingleList_8h.html#a45a41a43814914473f0c2bc9dca014ad">signle_list_init</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="SingleList_8h.html#a70ce099cdd2df6b4a2ae0d36ee231f68">signle_list_is_empty</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="SingleList_8h.html#a31f8420433dc2574bb961097b882d0b5">signle_list_get_elem</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>, <span class="keywordtype">int</span> i, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> * e);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="SingleList_8h.html#a43ad39377573b5895764ad5c2cca1df1">signle_list_append</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="SingleList_8h.html#a7102b851aa4096aa40a94a245930a5e3">signle_list_insert</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>, <span class="keywordtype">int</span> i, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">int</span> <a class="code" href="SingleList_8h.html#adc60a3f3cfb759d154acb150bd6b167b">signle_list_size</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="SingleList_8h.html#a206eccc7bd44d68da4f43b521297e8c1">signle_list_clear</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">int</span> <a class="code" href="SingleList_8h.html#a95e700b116179c4a1307b25e29d97fa1">signle_list_index</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="SingleList_8h.html#a73987410301d6639ffcc9248bd27ca68">signle_list_delete</a>(signleListPtr <a class="code" href="struct____signlelsit.html">signleList</a>, <span class="keywordtype">int</span> i, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> * e);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIST_SINGLELIST_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="global_8h_html_a0cb9c7fae5afe4237eb4d5d43318fa18"><div class="ttname"><a href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a></div><div class="ttdeci">int STATUS</div><div class="ttdoc">返回状态类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00024">global.h:24</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a206eccc7bd44d68da4f43b521297e8c1"><div class="ttname"><a href="SingleList_8h.html#a206eccc7bd44d68da4f43b521297e8c1">signle_list_clear</a></div><div class="ttdeci">STATUS signle_list_clear(signleListPtr signleList)</div><div class="ttdoc">将线性表清空 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00198">SingleList.c:198</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a73987410301d6639ffcc9248bd27ca68"><div class="ttname"><a href="SingleList_8h.html#a73987410301d6639ffcc9248bd27ca68">signle_list_delete</a></div><div class="ttdeci">STATUS signle_list_delete(signleListPtr signleList, int i, ElemType *e)</div><div class="ttdoc">删除线性表L中第ｉ个位置元素，并用ｅ返回其值 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00256">SingleList.c:256</a></div></div>
+<div class="ttc" id="struct____signlelsit_html"><div class="ttname"><a href="struct____signlelsit.html">__signlelsit</a></div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8h_source.html#l00016">SingleList.h:16</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a43ad39377573b5895764ad5c2cca1df1"><div class="ttname"><a href="SingleList_8h.html#a43ad39377573b5895764ad5c2cca1df1">signle_list_append</a></div><div class="ttdeci">STATUS signle_list_append(signleListPtr signleList, ElemType e)</div><div class="ttdoc">向表中追加一个数据 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00103">SingleList.c:103</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a45a41a43814914473f0c2bc9dca014ad"><div class="ttname"><a href="SingleList_8h.html#a45a41a43814914473f0c2bc9dca014ad">signle_list_init</a></div><div class="ttdeci">signleListPtr signle_list_init()</div><div class="ttdoc">初始化 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00018">SingleList.c:18</a></div></div>
+<div class="ttc" id="struct____signlelsit_html_a59cb1c695f46fb85ce15bde138183452"><div class="ttname"><a href="struct____signlelsit.html#a59cb1c695f46fb85ce15bde138183452">__signlelsit::next</a></div><div class="ttdeci">struct __signlelsit * next</div><div class="ttdoc">指针域 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8h_source.html#l00025">SingleList.h:25</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a70ce099cdd2df6b4a2ae0d36ee231f68"><div class="ttname"><a href="SingleList_8h.html#a70ce099cdd2df6b4a2ae0d36ee231f68">signle_list_is_empty</a></div><div class="ttdeci">BOOL signle_list_is_empty(signleListPtr signleList)</div><div class="ttdoc">判断线性表是否为空 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00039">SingleList.c:39</a></div></div>
+<div class="ttc" id="element_8h_html_a3e8b1bd855f5efcb6aa1f67fddcb69ad"><div class="ttname"><a href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a></div><div class="ttdeci">int ElemType</div><div class="ttdoc">元素类型　 </div><div class="ttdef"><b>Definition:</b> <a href="element_8h_source.html#l00011">element.h:11</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a2eaef8c0bfa3a199b6c9e8823042e381"><div class="ttname"><a href="SingleList_8h.html#a2eaef8c0bfa3a199b6c9e8823042e381">signleListPtr</a></div><div class="ttdeci">struct __signlelsit * signleListPtr</div><div class="ttdoc">链表指针类型 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8h_source.html#l00041">SingleList.h:41</a></div></div>
+<div class="ttc" id="SingleList_8h_html_adc60a3f3cfb759d154acb150bd6b167b"><div class="ttname"><a href="SingleList_8h.html#adc60a3f3cfb759d154acb150bd6b167b">signle_list_size</a></div><div class="ttdeci">int signle_list_size(signleListPtr signleList)</div><div class="ttdoc">返回给定表的数据长度 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00174">SingleList.c:174</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a7102b851aa4096aa40a94a245930a5e3"><div class="ttname"><a href="SingleList_8h.html#a7102b851aa4096aa40a94a245930a5e3">signle_list_insert</a></div><div class="ttdeci">STATUS signle_list_insert(signleListPtr signleList, int i, ElemType e)</div><div class="ttdoc">将给定元素插入指定位置 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00133">SingleList.c:133</a></div></div>
+<div class="ttc" id="struct____signlelsit_html_aa2538454c4dc9c91ed1176b93780dd8e"><div class="ttname"><a href="struct____signlelsit.html#aa2538454c4dc9c91ed1176b93780dd8e">__signlelsit::data</a></div><div class="ttdeci">ElemType data</div><div class="ttdoc">数据域 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8h_source.html#l00020">SingleList.h:20</a></div></div>
+<div class="ttc" id="global_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdoc">布尔类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00027">global.h:27</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a95e700b116179c4a1307b25e29d97fa1"><div class="ttname"><a href="SingleList_8h.html#a95e700b116179c4a1307b25e29d97fa1">signle_list_index</a></div><div class="ttdeci">int signle_list_index(signleListPtr signleList, ElemType e)</div><div class="ttdoc">查找元素ｅ在线性表中的位置 </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00223">SingleList.c:223</a></div></div>
+<div class="ttc" id="SingleList_8h_html_a31f8420433dc2574bb961097b882d0b5"><div class="ttname"><a href="SingleList_8h.html#a31f8420433dc2574bb961097b882d0b5">signle_list_get_elem</a></div><div class="ttdeci">STATUS signle_list_get_elem(signleListPtr signleList, int i, ElemType *e)</div><div class="ttdoc">将表中第ｉ个位置的元素的值返回给ｅ </div><div class="ttdef"><b>Definition:</b> <a href="SingleList_8c_source.html#l00063">SingleList.c:63</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0aa88ba44bbec23a6de57be31686ecf8.html">list</a></li><li class="navelem"><a class="el" href="SingleList_8h.html">SingleList.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

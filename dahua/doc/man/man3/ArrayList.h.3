@@ -1,0 +1,427 @@
+.TH "/home/laolang/git/dahua/dahua/include/list/ArrayList.h" 3 "2015年 十月 26日 星期一" "Version 1.0" "dahua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/laolang/git/dahua/dahua/include/list/ArrayList.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./element/element\&.h'\fP
+.br
+\fC#include '\&.\&./global/global\&.h'\fP
+.br
+
+.SS "结构体"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__arrayList\fP"
+.br
+.in -1c
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEFAULT_LENGTH\fP   20"
+.br
+.ti -1c
+.RI "#define \fBDEFAULT_EXPAND\fP   0\&.75"
+.br
+.in -1c
+.SS "类型定义"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__arrayList\fP \fB_arrayList\fP"
+.br
+.RI "\fI\fB顺序表结构\fP \fP"
+.ti -1c
+.RI "typedef struct \fB__arrayList\fP * \fBarrayListPtr\fP"
+.br
+.RI "\fI顺序表结构指针 \fP"
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "\fBarrayListPtr\fP \fBarray_list_init\fP ()"
+.br
+.RI "\fI初始化 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_expand\fP (\fBarrayListPtr\fP arrayList)"
+.br
+.RI "\fI顺序表扩容 \fP"
+.ti -1c
+.RI "\fBBOOL\fP \fBarray_list_is_empty\fP (\fBarrayListPtr\fP arrayList)"
+.br
+.RI "\fI判断线性表是否为空 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_get_elem\fP (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP *e)"
+.br
+.RI "\fI将顺序表中第ｉ个位置的元素的值返回给ｅ \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_append\fP (\fBarrayListPtr\fP arrayList, \fBElemType\fP e)"
+.br
+.RI "\fI向顺序表中追加一个数据 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_insert\fP (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP e)"
+.br
+.RI "\fI将给定元素插入指定位置 \fP"
+.ti -1c
+.RI "int \fBarray_list_size\fP (\fBarrayListPtr\fP arrayList)"
+.br
+.RI "\fI返回给定顺序表的数据长度 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_clear\fP (\fBarrayListPtr\fP arrayList)"
+.br
+.RI "\fI将线性表清空 \fP"
+.ti -1c
+.RI "int \fBarray_list_index\fP (\fBarrayListPtr\fP arrayList, \fBElemType\fP e)"
+.br
+.RI "\fI查找元素ｅ在线性表中的位置 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBarray_list_delete\fP (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP *e)"
+.br
+.RI "\fI删除线性表L中第ｉ个位置元素，并用ｅ返回其值 \fP"
+.in -1c
+.SH "详细描述"
+.PP 
+顺序表 Created on: 2015年10月22日 Author: laolang 
+.PP
+在文件 \fBArrayList\&.h\fP 中定义\&.
+.SH "宏定义说明"
+.PP 
+.SS "#define DEFAULT_EXPAND   0\&.75"
+
+.PP
+在文件 ArrayList\&.h 第 21 行定义\&.
+.PP
+参考自 array_list_init()\&.
+.SS "#define DEFAULT_LENGTH   20"
+
+.PP
+在文件 ArrayList\&.h 第 16 行定义\&.
+.PP
+参考自 array_list_init()\&.
+.SH "类型定义说明"
+.PP 
+.SS "typedef struct \fB__arrayList\fP \fB_arrayList\fP"
+
+.PP
+\fB顺序表结构\fP 
+.PP
+在文件 ArrayList\&.h 第 43 行定义\&.
+.SS "typedef struct \fB__arrayList\fP* \fBarrayListPtr\fP"
+
+.PP
+顺序表结构指针 
+.PP
+在文件 ArrayList\&.h 第 48 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "\fBSTATUS\fP array_list_append (\fBarrayListPtr\fP arrayList, \fBElemType\fP e)"
+
+.PP
+向顺序表中追加一个数据 
+.PP
+\fB前置条件:\fP
+.RS 4
+顺序表arrayList存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 顺序表 
+.br
+\fIe\fP 要追加的元素 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 成功 
+.br
+\fIERROR\fP 失败 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 96 行定义\&.
+.PP
+参考 array_list_expand(), __arrayList::data, __arrayList::length, OK , 以及 __arrayList::size\&.
+.SS "\fBSTATUS\fP array_list_clear (\fBarrayListPtr\fP arrayList)"
+
+.PP
+将线性表清空 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 线性表 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 成功 
+.br
+\fIERROR\fP 失败 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 176 行定义\&.
+.PP
+参考 ERROR, OK , 以及 __arrayList::size\&.
+.SS "\fBSTATUS\fP array_list_delete (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP * e)"
+
+.PP
+删除线性表L中第ｉ个位置元素，并用ｅ返回其值 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在 
+.PP
+线性表不为空 
+.PP
+i　的位置合法，即i满足 0 <= i < arrayList->size
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 线性表 
+.br
+\fIi　要删除的元素的位置\fP 
+.br
+\fIe　保存删除的元素的值\fP 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 删除成功 
+.br
+\fIERROR\fP 删除失败 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 234 行定义\&.
+.PP
+参考 array_list_is_empty(), array_list_size(), __arrayList::data, ERROR, OK , 以及 __arrayList::size\&.
+.SS "\fBSTATUS\fP array_list_expand (\fBarrayListPtr\fP arrayList)"
+
+.PP
+顺序表扩容 
+.PP
+\fB前置条件:\fP
+.RS 4
+顺序表arrayList 存在 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 要扩容的顺序表 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+OK 成功 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIERROR\fP 失败 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 30 行定义\&.
+.PP
+参考 __arrayList::data, __arrayList::expand, __arrayList::length , 以及 OK\&.
+.PP
+参考自 array_list_append() , 以及 array_list_insert()\&.
+.SS "\fBSTATUS\fP array_list_get_elem (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP * e)"
+
+.PP
+将顺序表中第ｉ个位置的元素的值返回给ｅ 
+.PP
+\fB前置条件:\fP
+.RS 4
+顺序表arrayList存在 
+.PP
+位置i合法，即i满足 0 <= i < arrayList->size 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 顺序表 
+.br
+\fIi\fP 位置 
+.br
+\fIe\fP 保存第ｉ个位置元素的值 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 72 行定义\&.
+.PP
+参考 __arrayList::data, ERROR, OK , 以及 __arrayList::size\&.
+.PP
+参考自 array_list_index()\&.
+.SS "int array_list_index (\fBarrayListPtr\fP arrayList, \fBElemType\fP e)"
+
+.PP
+查找元素ｅ在线性表中的位置 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在且不为空
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 顺序表 
+.br
+\fIe　要查找的元素\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+e　在顺序表中的位置 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIERROR\fP 不在线性表中或线性表为空或线性表不存在 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 195 行定义\&.
+.PP
+参考 array_list_get_elem(), array_list_is_empty(), array_list_size() , 以及 ERROR\&.
+.SS "\fBarrayListPtr\fP array_list_init ()"
+
+.PP
+初始化 
+.PP
+\fB返回:\fP
+.RS 4
+指向初始化后的顺序链表 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 10 行定义\&.
+.PP
+参考 __arrayList::data, DEFAULT_EXPAND, DEFAULT_LENGTH, __arrayList::expand, __arrayList::length , 以及 __arrayList::size\&.
+.SS "\fBSTATUS\fP array_list_insert (\fBarrayListPtr\fP arrayList, int i, \fBElemType\fP e)"
+
+.PP
+将给定元素插入指定位置 
+.PP
+\fB前置条件:\fP
+.RS 4
+顺序表arrayList存在 
+.PP
+位置i合法，如果i<0或i>arrayList->size + 1 则为非法
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 给定的顺序表 
+.br
+\fIi\fP 位置 
+.br
+\fIe\fP 要插入的元素 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+.RE
+.PP
+\fB前置条件:\fP
+.RS 4
+顺序表arrayList存在 
+.PP
+位置i合法，如果i<0或i>arrayList->size 则为非法
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 给定的顺序表 
+.br
+\fIi\fP 位置 
+.br
+\fIe\fP 要插入的元素 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 122 行定义\&.
+.PP
+参考 array_list_expand(), __arrayList::data, ERROR, __arrayList::length, OK, __arrayList::size , 以及 __str::size\&.
+.SS "\fBBOOL\fP array_list_is_empty (\fBarrayListPtr\fP arrayList)"
+
+.PP
+判断线性表是否为空 
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 给定的线性表 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fITRUE\fP 为空 
+.br
+\fIFALSE\fP 不为空 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 56 行定义\&.
+.PP
+参考 FALSE, __arrayList::size , 以及 TRUE\&.
+.PP
+参考自 array_list_delete() , 以及 array_list_index()\&.
+.SS "int array_list_size (\fBarrayListPtr\fP arrayList)"
+
+.PP
+返回给定顺序表的数据长度 
+.PP
+\fB前置条件:\fP
+.RS 4
+给定的顺序表 arrayList 不为NULL 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIarrayList\fP 给定的顺序表 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+顺序表的长度 
+.RE
+.PP
+
+.PP
+在文件 ArrayList\&.c 第 158 行定义\&.
+.PP
+参考 __arrayList::size\&.
+.PP
+参考自 array_list_delete() , 以及 array_list_index()\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 dahua 的 源代码自动生成\&.

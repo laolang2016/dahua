@@ -1,0 +1,59 @@
+.TH "__str" 3 "2015年 十月 26日 星期一" "Version 1.0" "dahua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__str \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <str\&.h>\fP
+.SS "成员变量"
+
+.in +1c
+.ti -1c
+.RI "char * \fBdata\fP"
+.br
+.RI "\fI串数组指针 \fP"
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.RI "\fI数组容量 \fP"
+.ti -1c
+.RI "double \fBexpand\fP"
+.br
+.RI "\fI数组扩充比例 \fP"
+.in -1c
+.SH "详细描述"
+.PP 
+在文件 str\&.h 第 28 行定义\&.
+.SH "结构体成员变量说明"
+.PP 
+.SS "char* __str::data"
+
+.PP
+串数组指针 
+.PP
+在文件 str\&.h 第 32 行定义\&.
+.PP
+参考自 main(), str_assign(), str_clear(), str_compare(), str_concat(), str_copy(), str_delete(), str_expand(), str_index(), str_insert(), str_is_empty(), str_replace(), str_size() , 以及 str_sub()\&.
+.SS "double __str::expand"
+
+.PP
+数组扩充比例 
+.PP
+在文件 str\&.h 第 47 行定义\&.
+.PP
+参考自 str_expand()\&.
+.SS "int __str::size"
+
+.PP
+数组容量 串数据长度 
+.PP
+在文件 str\&.h 第 42 行定义\&.
+.PP
+参考自 array_list_insert(), main(), str_concat(), str_copy(), str_delete(), str_expand(), str_index(), str_insert(), str_is_empty(), str_replace() , 以及 str_sub()\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 dahua 的 源代码自动生成\&.

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>dahua: /home/laolang/git/dahua/dahua/include/list/ArrayList.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dahua
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ArrayList_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ArrayList.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ArrayList_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef LIST_ARRAYLIST_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define LIST_ARRAYLIST_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;../element/element.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&quot;../global/global.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="ArrayList_8h.html#a5d77337a04e0d61c31cbc4ff7d83ca6b">   16</a></span>&#160;<span class="preprocessor">#define DEFAULT_LENGTH 20</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="ArrayList_8h.html#a3b356958cdb20d254a00d7bc50f3d2ad">   21</a></span>&#160;<span class="preprocessor">#define DEFAULT_EXPAND 0.75</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct____arrayList.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct____arrayList.html">__arrayList</a>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct____arrayList.html#a746917ebe84cf1de8ec2f4531fd58279">   28</a></span>&#160;    <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> * <a class="code" href="struct____arrayList.html#a746917ebe84cf1de8ec2f4531fd58279">data</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct____arrayList.html#a4d81011579f07be5b8e5b200696e2806">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct____arrayList.html#a4d81011579f07be5b8e5b200696e2806">length</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct____arrayList.html#a202d84fb01097087d92093f6fc60b8e4">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct____arrayList.html#a202d84fb01097087d92093f6fc60b8e4">size</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct____arrayList.html#a7686ce51fce8b5ec1c77016d3e47ba35">   37</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct____arrayList.html#a7686ce51fce8b5ec1c77016d3e47ba35">expand</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="ArrayList_8h.html#adb4ce4aae790892b65314cc49c8c7b32">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____arrayList.html">__arrayList</a> <a class="code" href="struct____arrayList.html">_arrayList</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="ArrayList_8h.html#aedde73232e35c4fae2712e532c192954">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct____arrayList.html">__arrayList</a> * <a class="code" href="ArrayList_8h.html#aedde73232e35c4fae2712e532c192954">arrayListPtr</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//InitList(*L);         初始化操作，建立一个空的线性表 L。</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;arrayListPtr <a class="code" href="ArrayList_8h.html#adebf7f063761006c62345d97b261aa51">array_list_init</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#a3aca0051078549cd754bb38d621496e4">array_list_expand</a>(arrayListPtr arrayList );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="ArrayList_8h.html#a22687aa4d96c505ae358a9f2dcff80b7">array_list_is_empty</a>(arrayListPtr arrayList );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#a977cfabee28c27f41aa2a33caf15d024">array_list_get_elem</a>(arrayListPtr arrayList, <span class="keywordtype">int</span> i , <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> * e);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#adb393d7feb4966d63d0130f381b12164">array_list_append</a>(arrayListPtr arrayList , <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#a1f90f869df8780aa715524efc2bdae10">array_list_insert</a>( arrayListPtr arrayList, <span class="keywordtype">int</span> i , <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ArrayList_8h.html#a98255e20286330c5e180a0e85ad0cbae">array_list_size</a>( arrayListPtr arrayList );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#a8c5a2943a5e353945dd87ea65bc1bb87">array_list_clear</a>(arrayListPtr arrayList );</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ArrayList_8h.html#ad820a3161652c6b917e9d9a3af699e6c">array_list_index</a>(arrayListPtr arrayList, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> e );</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> <a class="code" href="ArrayList_8h.html#af9c54d359266e0b1a478798caf4f4968">array_list_delete</a>(arrayListPtr arrayList, <span class="keywordtype">int</span> i, <a class="code" href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a> * e);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIST_ARRAYLIST_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ArrayList_8h_html_aedde73232e35c4fae2712e532c192954"><div class="ttname"><a href="ArrayList_8h.html#aedde73232e35c4fae2712e532c192954">arrayListPtr</a></div><div class="ttdeci">struct __arrayList * arrayListPtr</div><div class="ttdoc">顺序表结构指针 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00048">ArrayList.h:48</a></div></div>
+<div class="ttc" id="struct____arrayList_html"><div class="ttname"><a href="struct____arrayList.html">__arrayList</a></div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00026">ArrayList.h:26</a></div></div>
+<div class="ttc" id="global_8h_html_a0cb9c7fae5afe4237eb4d5d43318fa18"><div class="ttname"><a href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a></div><div class="ttdeci">int STATUS</div><div class="ttdoc">返回状态类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00024">global.h:24</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_ad820a3161652c6b917e9d9a3af699e6c"><div class="ttname"><a href="ArrayList_8h.html#ad820a3161652c6b917e9d9a3af699e6c">array_list_index</a></div><div class="ttdeci">int array_list_index(arrayListPtr arrayList, ElemType e)</div><div class="ttdoc">查找元素ｅ在线性表中的位置 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00195">ArrayList.c:195</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a977cfabee28c27f41aa2a33caf15d024"><div class="ttname"><a href="ArrayList_8h.html#a977cfabee28c27f41aa2a33caf15d024">array_list_get_elem</a></div><div class="ttdeci">STATUS array_list_get_elem(arrayListPtr arrayList, int i, ElemType *e)</div><div class="ttdoc">将顺序表中第ｉ个位置的元素的值返回给ｅ </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00072">ArrayList.c:72</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a8c5a2943a5e353945dd87ea65bc1bb87"><div class="ttname"><a href="ArrayList_8h.html#a8c5a2943a5e353945dd87ea65bc1bb87">array_list_clear</a></div><div class="ttdeci">STATUS array_list_clear(arrayListPtr arrayList)</div><div class="ttdoc">将线性表清空 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00176">ArrayList.c:176</a></div></div>
+<div class="ttc" id="struct____arrayList_html_a202d84fb01097087d92093f6fc60b8e4"><div class="ttname"><a href="struct____arrayList.html#a202d84fb01097087d92093f6fc60b8e4">__arrayList::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">数据个数 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00034">ArrayList.h:34</a></div></div>
+<div class="ttc" id="struct____arrayList_html_a7686ce51fce8b5ec1c77016d3e47ba35"><div class="ttname"><a href="struct____arrayList.html#a7686ce51fce8b5ec1c77016d3e47ba35">__arrayList::expand</a></div><div class="ttdeci">double expand</div><div class="ttdoc">默认扩充比例 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00037">ArrayList.h:37</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a98255e20286330c5e180a0e85ad0cbae"><div class="ttname"><a href="ArrayList_8h.html#a98255e20286330c5e180a0e85ad0cbae">array_list_size</a></div><div class="ttdeci">int array_list_size(arrayListPtr arrayList)</div><div class="ttdoc">返回给定顺序表的数据长度 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00158">ArrayList.c:158</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_af9c54d359266e0b1a478798caf4f4968"><div class="ttname"><a href="ArrayList_8h.html#af9c54d359266e0b1a478798caf4f4968">array_list_delete</a></div><div class="ttdeci">STATUS array_list_delete(arrayListPtr arrayList, int i, ElemType *e)</div><div class="ttdoc">删除线性表L中第ｉ个位置元素，并用ｅ返回其值 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00234">ArrayList.c:234</a></div></div>
+<div class="ttc" id="element_8h_html_a3e8b1bd855f5efcb6aa1f67fddcb69ad"><div class="ttname"><a href="element_8h.html#a3e8b1bd855f5efcb6aa1f67fddcb69ad">ElemType</a></div><div class="ttdeci">int ElemType</div><div class="ttdoc">元素类型　 </div><div class="ttdef"><b>Definition:</b> <a href="element_8h_source.html#l00011">element.h:11</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_adb393d7feb4966d63d0130f381b12164"><div class="ttname"><a href="ArrayList_8h.html#adb393d7feb4966d63d0130f381b12164">array_list_append</a></div><div class="ttdeci">STATUS array_list_append(arrayListPtr arrayList, ElemType e)</div><div class="ttdoc">向顺序表中追加一个数据 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00096">ArrayList.c:96</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_adebf7f063761006c62345d97b261aa51"><div class="ttname"><a href="ArrayList_8h.html#adebf7f063761006c62345d97b261aa51">array_list_init</a></div><div class="ttdeci">arrayListPtr array_list_init()</div><div class="ttdoc">初始化 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00010">ArrayList.c:10</a></div></div>
+<div class="ttc" id="struct____arrayList_html_a746917ebe84cf1de8ec2f4531fd58279"><div class="ttname"><a href="struct____arrayList.html#a746917ebe84cf1de8ec2f4531fd58279">__arrayList::data</a></div><div class="ttdeci">ElemType * data</div><div class="ttdoc">数组指针 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00028">ArrayList.h:28</a></div></div>
+<div class="ttc" id="struct____arrayList_html_a4d81011579f07be5b8e5b200696e2806"><div class="ttname"><a href="struct____arrayList.html#a4d81011579f07be5b8e5b200696e2806">__arrayList::length</a></div><div class="ttdeci">int length</div><div class="ttdoc">表容量 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8h_source.html#l00031">ArrayList.h:31</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a22687aa4d96c505ae358a9f2dcff80b7"><div class="ttname"><a href="ArrayList_8h.html#a22687aa4d96c505ae358a9f2dcff80b7">array_list_is_empty</a></div><div class="ttdeci">BOOL array_list_is_empty(arrayListPtr arrayList)</div><div class="ttdoc">判断线性表是否为空 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00056">ArrayList.c:56</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a1f90f869df8780aa715524efc2bdae10"><div class="ttname"><a href="ArrayList_8h.html#a1f90f869df8780aa715524efc2bdae10">array_list_insert</a></div><div class="ttdeci">STATUS array_list_insert(arrayListPtr arrayList, int i, ElemType e)</div><div class="ttdoc">将给定元素插入指定位置 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00122">ArrayList.c:122</a></div></div>
+<div class="ttc" id="ArrayList_8h_html_a3aca0051078549cd754bb38d621496e4"><div class="ttname"><a href="ArrayList_8h.html#a3aca0051078549cd754bb38d621496e4">array_list_expand</a></div><div class="ttdeci">STATUS array_list_expand(arrayListPtr arrayList)</div><div class="ttdoc">顺序表扩容 </div><div class="ttdef"><b>Definition:</b> <a href="ArrayList_8c_source.html#l00030">ArrayList.c:30</a></div></div>
+<div class="ttc" id="global_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdoc">布尔类型 </div><div class="ttdef"><b>Definition:</b> <a href="global_8h_source.html#l00027">global.h:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0aa88ba44bbec23a6de57be31686ecf8.html">list</a></li><li class="navelem"><a class="el" href="ArrayList_8h.html">ArrayList.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

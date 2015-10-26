@@ -1,0 +1,368 @@
+.TH "/home/laolang/git/dahua/dahua/include/list/SingleList.h" 3 "2015年 十月 26日 星期一" "Version 1.0" "dahua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/laolang/git/dahua/dahua/include/list/SingleList.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./element/element\&.h'\fP
+.br
+\fC#include '\&.\&./global/global\&.h'\fP
+.br
+
+.SS "结构体"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__signlelsit\fP"
+.br
+.in -1c
+.SS "类型定义"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__signlelsit\fP \fB_node\fP"
+.br
+.RI "\fI结点类型 \fP"
+.ti -1c
+.RI "typedef struct \fB__signlelsit\fP \fBsignleList\fP"
+.br
+.RI "\fI链表类型 \fP"
+.ti -1c
+.RI "typedef struct \fB__signlelsit\fP * \fBsignleListPtr\fP"
+.br
+.RI "\fI链表指针类型 \fP"
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "\fBsignleListPtr\fP \fBsignle_list_init\fP ()"
+.br
+.RI "\fI初始化 \fP"
+.ti -1c
+.RI "\fBBOOL\fP \fBsignle_list_is_empty\fP (\fBsignleListPtr\fP \fBsignleList\fP)"
+.br
+.RI "\fI判断线性表是否为空 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBsignle_list_get_elem\fP (\fBsignleListPtr\fP \fBsignleList\fP, int i, \fBElemType\fP *e)"
+.br
+.RI "\fI将表中第ｉ个位置的元素的值返回给ｅ \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBsignle_list_append\fP (\fBsignleListPtr\fP \fBsignleList\fP, \fBElemType\fP e)"
+.br
+.RI "\fI向表中追加一个数据 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBsignle_list_insert\fP (\fBsignleListPtr\fP \fBsignleList\fP, int i, \fBElemType\fP e)"
+.br
+.RI "\fI将给定元素插入指定位置 \fP"
+.ti -1c
+.RI "int \fBsignle_list_size\fP (\fBsignleListPtr\fP \fBsignleList\fP)"
+.br
+.RI "\fI返回给定表的数据长度 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBsignle_list_clear\fP (\fBsignleListPtr\fP \fBsignleList\fP)"
+.br
+.RI "\fI将线性表清空 \fP"
+.ti -1c
+.RI "int \fBsignle_list_index\fP (\fBsignleListPtr\fP \fBsignleList\fP, \fBElemType\fP e)"
+.br
+.RI "\fI查找元素ｅ在线性表中的位置 \fP"
+.ti -1c
+.RI "\fBSTATUS\fP \fBsignle_list_delete\fP (\fBsignleListPtr\fP \fBsignleList\fP, int i, \fBElemType\fP *e)"
+.br
+.RI "\fI删除线性表L中第ｉ个位置元素，并用ｅ返回其值 \fP"
+.in -1c
+.SH "详细描述"
+.PP 
+Created on: 2015年10月24日 Author: laolang 
+.PP
+在文件 \fBSingleList\&.h\fP 中定义\&.
+.SH "类型定义说明"
+.PP 
+.SS "typedef struct \fB__signlelsit\fP \fB_node\fP"
+
+.PP
+结点类型 
+.PP
+在文件 SingleList\&.h 第 31 行定义\&.
+.SS "typedef struct \fB__signlelsit\fP \fBsignleList\fP"
+
+.PP
+链表类型 
+.PP
+在文件 SingleList\&.h 第 36 行定义\&.
+.SS "typedef struct \fB__signlelsit\fP* \fBsignleListPtr\fP"
+
+.PP
+链表指针类型 
+.PP
+在文件 SingleList\&.h 第 41 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "\fBSTATUS\fP signle_list_append (\fBsignleListPtr\fP signleList, \fBElemType\fP e)"
+
+.PP
+向表中追加一个数据 
+.PP
+\fB前置条件:\fP
+.RS 4
+表signleList存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 表 
+.br
+\fIe\fP 要追加的元素 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 成功 
+.br
+\fIERROR\fP 失败 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 103 行定义\&.
+.PP
+参考 __signlelsit::data, __signlelsit::next , 以及 OK\&.
+.SS "\fBSTATUS\fP signle_list_clear (\fBsignleListPtr\fP signleList)"
+
+.PP
+将线性表清空 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 线性表 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 成功 
+.br
+\fIERROR\fP 失败 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 198 行定义\&.
+.PP
+参考 __signlelsit::next , 以及 OK\&.
+.SS "\fBSTATUS\fP signle_list_delete (\fBsignleListPtr\fP signleList, int i, \fBElemType\fP * e)"
+
+.PP
+删除线性表L中第ｉ个位置元素，并用ｅ返回其值 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在 
+.PP
+线性表不为空 
+.PP
+i　的位置合法，即i满足 0 <= i < signleList->size
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 线性表 
+.br
+\fIi　要删除的元素的位置\fP 
+.br
+\fIe　保存删除的元素的值\fP 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 删除成功 
+.br
+\fIERROR\fP 删除失败 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 256 行定义\&.
+.PP
+参考 __signlelsit::data, __signlelsit::next, OK , 以及 signle_list_is_empty()\&.
+.SS "\fBSTATUS\fP signle_list_get_elem (\fBsignleListPtr\fP signleList, int i, \fBElemType\fP * e)"
+
+.PP
+将表中第ｉ个位置的元素的值返回给ｅ 
+.PP
+\fB前置条件:\fP
+.RS 4
+表signleList存在 
+.PP
+表signleList不为空 
+.PP
+位置i合法，即i满足 0 <= i < signleList->size 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 表 
+.br
+\fIi\fP 位置 
+.br
+\fIe\fP 保存第ｉ个位置元素的值 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIOK\fP 查找成功 
+.br
+\fIERROR\fP 查找失败 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 63 行定义\&.
+.PP
+参考 __signlelsit::data, ERROR, __signlelsit::next, OK , 以及 signle_list_is_empty()\&.
+.SS "int signle_list_index (\fBsignleListPtr\fP signleList, \fBElemType\fP e)"
+
+.PP
+查找元素ｅ在线性表中的位置 
+.PP
+\fB前置条件:\fP
+.RS 4
+线性表存在且不为空
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 表 
+.br
+\fIe　要查找的元素\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+e　在表中的位置 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fIERROR\fP 不在线性表中或线性表为空或线性表不存在 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 223 行定义\&.
+.PP
+参考 __signlelsit::data, __signlelsit::next , 以及 signle_list_is_empty()\&.
+.SS "\fBsignleListPtr\fP signle_list_init ()"
+
+.PP
+初始化 
+.PP
+\fB返回:\fP
+.RS 4
+指向初始化后的链表 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fINULL\fP 创建失败 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 18 行定义\&.
+.PP
+参考 __signlelsit::next\&.
+.SS "\fBSTATUS\fP signle_list_insert (\fBsignleListPtr\fP signleList, int i, \fBElemType\fP e)"
+
+.PP
+将给定元素插入指定位置 
+.PP
+\fB前置条件:\fP
+.RS 4
+表signleList存在 
+.PP
+位置i合法，如果i<0或i>signleList->size + 1 则为非法
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 给定的表 
+.br
+\fIi\fP 位置 
+.br
+\fIe\fP 要插入的元素 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 133 行定义\&.
+.PP
+参考 __signlelsit::data, ERROR, __signlelsit::next, OK , 以及 signle_list_is_empty()\&.
+.SS "\fBBOOL\fP signle_list_is_empty (\fBsignleListPtr\fP signleList)"
+
+.PP
+判断线性表是否为空 
+.PP
+\fB前置条件:\fP
+.RS 4
+链表存在
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 给定的线性表 
+.RE
+.PP
+\fB返回值:\fP
+.RS 4
+\fITRUE\fP 为空 
+.br
+\fIFALSE\fP 不为空 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 39 行定义\&.
+.PP
+参考 FALSE, __signlelsit::next , 以及 TRUE\&.
+.PP
+参考自 signle_list_delete(), signle_list_get_elem(), signle_list_index() , 以及 signle_list_insert()\&.
+.SS "int signle_list_size (\fBsignleListPtr\fP signleList)"
+
+.PP
+返回给定表的数据长度 
+.PP
+\fB前置条件:\fP
+.RS 4
+给定的表 signleList 不为NULL 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIsignleList\fP 给定的表 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+表的长度 
+.RE
+.PP
+
+.PP
+在文件 SingleList\&.c 第 174 行定义\&.
+.PP
+参考 __signlelsit::next\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 dahua 的 源代码自动生成\&.

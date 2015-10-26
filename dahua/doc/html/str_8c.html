@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>dahua: /home/laolang/git/dahua/dahua/src/str/str.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dahua
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('str_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">str.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="str_8h_source.html">../../include/str/str.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+str.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c__incl.png" border="0" usemap="#_2home_2laolang_2git_2dahua_2dahua_2src_2str_2str_8c" alt=""/></div>
+<map name="_2home_2laolang_2git_2dahua_2dahua_2src_2str_2str_8c" id="_2home_2laolang_2git_2dahua_2dahua_2src_2str_2str_8c">
+<area shape="rect" id="node5" href="str_8h.html" title="../../include/str/str.h" alt="" coords="269,95,405,121"/><area shape="rect" id="node6" href="global_8h.html" title="../../include/global\l/global.h" alt="" coords="275,169,400,211"/></map>
+</div>
+</div>
+<p><a href="str_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7bb788d1888c95888c270160906b4659"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a7bb788d1888c95888c270160906b4659">str_assign</a> (char *chars)</td></tr>
+<tr class="memdesc:a7bb788d1888c95888c270160906b4659"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据字符串常量chars生成一个串  <a href="#a7bb788d1888c95888c270160906b4659">更多...</a><br /></td></tr>
+<tr class="separator:a7bb788d1888c95888c270160906b4659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba31201172cbcf28706fccea1ae3696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a2ba31201172cbcf28706fccea1ae3696">str_expand</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string)</td></tr>
+<tr class="memdesc:a2ba31201172cbcf28706fccea1ae3696"><td class="mdescLeft">&#160;</td><td class="mdescRight">串数组扩容  <a href="#a2ba31201172cbcf28706fccea1ae3696">更多...</a><br /></td></tr>
+<tr class="separator:a2ba31201172cbcf28706fccea1ae3696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2dcdc7720fdcea272a81fcbe2e14adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#ae2dcdc7720fdcea272a81fcbe2e14adf">str_copy</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string)</td></tr>
+<tr class="memdesc:ae2dcdc7720fdcea272a81fcbe2e14adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">由串string复制得到一个新串  <a href="#ae2dcdc7720fdcea272a81fcbe2e14adf">更多...</a><br /></td></tr>
+<tr class="separator:ae2dcdc7720fdcea272a81fcbe2e14adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775267ae8cc3522241985c190d039a5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a775267ae8cc3522241985c190d039a5f">str_clear</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string)</td></tr>
+<tr class="memdesc:a775267ae8cc3522241985c190d039a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将串string清空  <a href="#a775267ae8cc3522241985c190d039a5f">更多...</a><br /></td></tr>
+<tr class="separator:a775267ae8cc3522241985c190d039a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd20c2a47a4664c8562ec582561fab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a4cd20c2a47a4664c8562ec582561fab8">str_is_empty</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string)</td></tr>
+<tr class="memdesc:a4cd20c2a47a4664c8562ec582561fab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断串string是否为空串  <a href="#a4cd20c2a47a4664c8562ec582561fab8">更多...</a><br /></td></tr>
+<tr class="separator:a4cd20c2a47a4664c8562ec582561fab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2065ff66a81f648b516c57dff54d25a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a2065ff66a81f648b516c57dff54d25a7">str_size</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string)</td></tr>
+<tr class="memdesc:a2065ff66a81f648b516c57dff54d25a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到串string的长度  <a href="#a2065ff66a81f648b516c57dff54d25a7">更多...</a><br /></td></tr>
+<tr class="separator:a2065ff66a81f648b516c57dff54d25a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859a35a7f281c5424153aca86f82c453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a859a35a7f281c5424153aca86f82c453">str_compare</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str1, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str2)</td></tr>
+<tr class="memdesc:a859a35a7f281c5424153aca86f82c453"><td class="mdescLeft">&#160;</td><td class="mdescRight">比较两人个串的大小  <a href="#a859a35a7f281c5424153aca86f82c453">更多...</a><br /></td></tr>
+<tr class="separator:a859a35a7f281c5424153aca86f82c453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b90ee43a6344de85fc3e51b2b96c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a36b90ee43a6344de85fc3e51b2b96c0d">str_concat</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str1, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str2)</td></tr>
+<tr class="memdesc:a36b90ee43a6344de85fc3e51b2b96c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">链接两人个字符串返回新的字符串  <a href="#a36b90ee43a6344de85fc3e51b2b96c0d">更多...</a><br /></td></tr>
+<tr class="separator:a36b90ee43a6344de85fc3e51b2b96c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236b399104c543782e59cbae48239158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a236b399104c543782e59cbae48239158">str_sub</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string, int pos, int len)</td></tr>
+<tr class="memdesc:a236b399104c543782e59cbae48239158"><td class="mdescLeft">&#160;</td><td class="mdescRight">从串string中的第pos个字符取出长度为len的子串  <a href="#a236b399104c543782e59cbae48239158">更多...</a><br /></td></tr>
+<tr class="separator:a236b399104c543782e59cbae48239158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31512e0c3c65b19057405220124c7119"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a31512e0c3c65b19057405220124c7119">str_insert</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string, int pos, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> in)</td></tr>
+<tr class="memdesc:a31512e0c3c65b19057405220124c7119"><td class="mdescLeft">&#160;</td><td class="mdescRight">在串string的第pos个位置插入串in  <a href="#a31512e0c3c65b19057405220124c7119">更多...</a><br /></td></tr>
+<tr class="separator:a31512e0c3c65b19057405220124c7119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03e4f9b6121ca38221d6120805d202a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#ab03e4f9b6121ca38221d6120805d202a">str_delete</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string, int pos, int len)</td></tr>
+<tr class="memdesc:ab03e4f9b6121ca38221d6120805d202a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在串string中，从第pos个字符开始删除长度为len的子串  <a href="#ab03e4f9b6121ca38221d6120805d202a">更多...</a><br /></td></tr>
+<tr class="separator:ab03e4f9b6121ca38221d6120805d202a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5402c7c8bdf2756146eed5f1045cfdb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a5402c7c8bdf2756146eed5f1045cfdb7">str_index</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> t, int pos)</td></tr>
+<tr class="memdesc:a5402c7c8bdf2756146eed5f1045cfdb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找串string中第pos个字符后，串t第一次出现的位置  <a href="#a5402c7c8bdf2756146eed5f1045cfdb7">更多...</a><br /></td></tr>
+<tr class="separator:a5402c7c8bdf2756146eed5f1045cfdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b94841847e5860b3ff6e41bd3e31afb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8c.html#a7b94841847e5860b3ff6e41bd3e31afb">str_replace</a> (<a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> string, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> t, <a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> v)</td></tr>
+<tr class="memdesc:a7b94841847e5860b3ff6e41bd3e31afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将串string中所有与串t相等的不重叠的子串替换为串v  <a href="#a7b94841847e5860b3ff6e41bd3e31afb">更多...</a><br /></td></tr>
+<tr class="separator:a7b94841847e5860b3ff6e41bd3e31afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a7bb788d1888c95888c270160906b4659"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_assign </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>chars</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据字符串常量chars生成一个串 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chars</td><td>字符串常量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回生成的串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>创建串失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00020">20</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a> , 以及 <a class="el" href="str_8c_source.html#l00073">str_copy()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a7bb788d1888c95888c270160906b4659_icgraph.png" border="0" usemap="#str_8c_a7bb788d1888c95888c270160906b4659_icgraph" alt=""/></div>
+<map name="str_8c_a7bb788d1888c95888c270160906b4659_icgraph" id="str_8c_a7bb788d1888c95888c270160906b4659_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="256,5,307,32"/><area shape="rect" id="node3" href="str_8c.html#ae2dcdc7720fdcea272a81fcbe2e14adf" title="由串string复制得到一个新串 " alt="" coords="136,31,208,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a775267ae8cc3522241985c190d039a5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> str_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将串string清空 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string存在 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>要清空的串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OK</td><td>操作成功 </td></tr>
+    <tr><td class="paramname">ERROR</td><td>操作失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00088">88</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a> , 以及 <a class="el" href="global_8c_source.html#l00003">OK</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a775267ae8cc3522241985c190d039a5f_icgraph.png" border="0" usemap="#str_8c_a775267ae8cc3522241985c190d039a5f_icgraph" alt=""/></div>
+<map name="str_8c_a775267ae8cc3522241985c190d039a5f_icgraph" id="str_8c_a775267ae8cc3522241985c190d039a5f_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="125,5,176,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a859a35a7f281c5424153aca86f82c453"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int str_compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>str1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>str2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>比较两人个串的大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str1</td><td>串１ </td></tr>
+    <tr><td class="paramname">str2　串２</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>str1 &lt; str2 </td></tr>
+    <tr><td class="paramname">0</td><td>str2 = str2 </td></tr>
+    <tr><td class="paramname">1</td><td>str1 &gt; str2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00146">146</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a859a35a7f281c5424153aca86f82c453_icgraph.png" border="0" usemap="#str_8c_a859a35a7f281c5424153aca86f82c453_icgraph" alt=""/></div>
+<map name="str_8c_a859a35a7f281c5424153aca86f82c453_icgraph" id="str_8c_a859a35a7f281c5424153aca86f82c453_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="148,5,199,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36b90ee43a6344de85fc3e51b2b96c0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_concat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>str1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>str2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>链接两人个字符串返回新的字符串 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>两人个串存在且不为空 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str1</td><td>串１ </td></tr>
+    <tr><td class="paramname">str2　串２</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新的串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>链接失败！ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00170">170</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="str_8h_source.html#l00042">__str::size</a> , 以及 <a class="el" href="str_8c_source.html#l00110">str_is_empty()</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_cgraph.png" border="0" usemap="#str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_cgraph" alt=""/></div>
+<map name="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_cgraph" id="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_cgraph">
+<area shape="rect" id="node2" href="str_8c.html#a4cd20c2a47a4664c8562ec582561fab8" title="判断串string是否为空串 " alt="" coords="136,5,233,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_icgraph.png" border="0" usemap="#str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_icgraph" alt=""/></div>
+<map name="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_icgraph" id="str_8c_a36b90ee43a6344de85fc3e51b2b96c0d_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="136,5,187,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2dcdc7720fdcea272a81fcbe2e14adf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>由串string复制得到一个新串 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string 存在 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>源串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新的串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>复制失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="str_8h_source.html#l00042">__str::size</a> , 以及 <a class="el" href="str_8c_source.html#l00020">str_assign()</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_cgraph.png" border="0" usemap="#str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_cgraph" alt=""/></div>
+<map name="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_cgraph" id="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_cgraph">
+<area shape="rect" id="node2" href="str_8c.html#a7bb788d1888c95888c270160906b4659" title="根据字符串常量chars生成一个串 " alt="" coords="125,5,208,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_icgraph.png" border="0" usemap="#str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_icgraph" alt=""/></div>
+<map name="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_icgraph" id="str_8c_ae2dcdc7720fdcea272a81fcbe2e14adf_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="125,5,176,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab03e4f9b6121ca38221d6120805d202a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在串string中，从第pos个字符开始删除长度为len的子串 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string存在且不为空 </dd>
+<dd>
+pos应满足：0 &lt;= pos &amp;&amp; pos &lt;= string-&gt;size - 1 </dd>
+<dd>
+len 应满足：1 &lt;= len &amp;&amp; len &lt;= string-&gt;size - pos</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>源串 </td></tr>
+    <tr><td class="paramname">pos　删除的起始位置</td><td></td></tr>
+    <tr><td class="paramname">len　要删除的子串的长度</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>　删除子串后的串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>删除失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00308">308</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a> , 以及 <a class="el" href="str_8h_source.html#l00042">__str::size</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_ab03e4f9b6121ca38221d6120805d202a_icgraph.png" border="0" usemap="#str_8c_ab03e4f9b6121ca38221d6120805d202a_icgraph" alt=""/></div>
+<map name="str_8c_ab03e4f9b6121ca38221d6120805d202a_icgraph" id="str_8c_ab03e4f9b6121ca38221d6120805d202a_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="132,5,183,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ba31201172cbcf28706fccea1ae3696"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="global_8h.html#a0cb9c7fae5afe4237eb4d5d43318fa18">STATUS</a> str_expand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>串数组扩容 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string存在</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>要扩容的串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">OK</td><td>扩容成功 </td></tr>
+    <tr><td class="paramname">ERROR</td><td>扩容失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00048">48</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="str_8h_source.html#l00047">__str::expand</a>, <a class="el" href="global_8c_source.html#l00003">OK</a> , 以及 <a class="el" href="str_8h_source.html#l00042">__str::size</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5402c7c8bdf2756146eed5f1045cfdb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int str_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找串string中第pos个字符后，串t第一次出现的位置 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string 和 串t存在 </dd>
+<dd>
+pos满足 0&lt;= pos &amp;&amp; pos &lt;= string-&gt;size - t-&gt;size </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>主串 </td></tr>
+    <tr><td class="paramname">t　要查找的串</td><td></td></tr>
+    <tr><td class="paramname">pos　查找的起始位置</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>　t第一次出现的位置 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>未找到 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00350">350</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="global_8c_source.html#l00009">FALSE</a>, <a class="el" href="str_8h_source.html#l00042">__str::size</a> , 以及 <a class="el" href="global_8c_source.html#l00007">TRUE</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a> , 以及 <a class="el" href="str_8c_source.html#l00407">str_replace()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a5402c7c8bdf2756146eed5f1045cfdb7_icgraph.png" border="0" usemap="#str_8c_a5402c7c8bdf2756146eed5f1045cfdb7_icgraph" alt=""/></div>
+<map name="str_8c_a5402c7c8bdf2756146eed5f1045cfdb7_icgraph" id="str_8c_a5402c7c8bdf2756146eed5f1045cfdb7_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="263,5,313,32"/><area shape="rect" id="node3" href="str_8c.html#a7b94841847e5860b3ff6e41bd3e31afb" title="将串string中所有与串t相等的不重叠的子串替换为串v " alt="" coords="128,31,215,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a31512e0c3c65b19057405220124c7119"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在串string的第pos个位置插入串in </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string和in存在且不为空</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>源串 </td></tr>
+    <tr><td class="paramname">pos　要在源口中中插入串的位置</td><td></td></tr>
+    <tr><td class="paramname">in　要插入的串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>　返回新的串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>插入失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00256">256</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a> , 以及 <a class="el" href="str_8h_source.html#l00042">__str::size</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a31512e0c3c65b19057405220124c7119_icgraph.png" border="0" usemap="#str_8c_a31512e0c3c65b19057405220124c7119_icgraph" alt=""/></div>
+<map name="str_8c_a31512e0c3c65b19057405220124c7119_icgraph" id="str_8c_a31512e0c3c65b19057405220124c7119_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="129,5,180,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4cd20c2a47a4664c8562ec582561fab8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="global_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> str_is_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断串string是否为空串 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string存在</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>要判断的串</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>为空 </td></tr>
+    <tr><td class="paramname">FALSE</td><td>不为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="global_8c_source.html#l00009">FALSE</a>, <a class="el" href="str_8h_source.html#l00042">__str::size</a> , 以及 <a class="el" href="global_8c_source.html#l00007">TRUE</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a> , 以及 <a class="el" href="str_8c_source.html#l00170">str_concat()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a4cd20c2a47a4664c8562ec582561fab8_icgraph.png" border="0" usemap="#str_8c_a4cd20c2a47a4664c8562ec582561fab8_icgraph" alt=""/></div>
+<map name="str_8c_a4cd20c2a47a4664c8562ec582561fab8_icgraph" id="str_8c_a4cd20c2a47a4664c8562ec582561fab8_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="281,5,332,32"/><area shape="rect" id="node3" href="str_8c.html#a36b90ee43a6344de85fc3e51b2b96c0d" title="链接两人个字符串返回新的字符串 " alt="" coords="151,31,233,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b94841847e5860b3ff6e41bd3e31afb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_replace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将串string中所有与串t相等的不重叠的子串替换为串v </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string,t,v存在且不为空</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>主串 </td></tr>
+    <tr><td class="paramname">t</td><td>被替换的子串 </td></tr>
+    <tr><td class="paramname">v</td><td>替换的串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>　替换后的新串 </dd></dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00407">407</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>, <a class="el" href="str_8h_source.html#l00042">__str::size</a> , 以及 <a class="el" href="str_8c_source.html#l00350">str_index()</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_cgraph.png" border="0" usemap="#str_8c_a7b94841847e5860b3ff6e41bd3e31afb_cgraph" alt=""/></div>
+<map name="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_cgraph" id="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_cgraph">
+<area shape="rect" id="node2" href="str_8c.html#a5402c7c8bdf2756146eed5f1045cfdb7" title="查找串string中第pos个字符后，串t第一次出现的位置 " alt="" coords="140,5,215,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_icgraph.png" border="0" usemap="#str_8c_a7b94841847e5860b3ff6e41bd3e31afb_icgraph" alt=""/></div>
+<map name="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_icgraph" id="str_8c_a7b94841847e5860b3ff6e41bd3e31afb_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="140,5,191,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2065ff66a81f648b516c57dff54d25a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int str_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>得到串string的长度 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string 存在 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>要计算长度的串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>串string的长度 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>操作失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00130">130</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a2065ff66a81f648b516c57dff54d25a7_icgraph.png" border="0" usemap="#str_8c_a2065ff66a81f648b516c57dff54d25a7_icgraph" alt=""/></div>
+<map name="str_8c_a2065ff66a81f648b516c57dff54d25a7_icgraph" id="str_8c_a2065ff66a81f648b516c57dff54d25a7_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="121,5,172,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a236b399104c543782e59cbae48239158"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a> str_sub </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="str_8h.html#ae2d9c226b5ae3d8e779f347f69cde020">String</a>&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从串string中的第pos个字符取出长度为len的子串 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>串string存在 </dd>
+<dd>
+pos 满足：0 &lt;= pos &lt;= string-&gt;size - 1 </dd>
+<dd>
+len 满足：0 &lt;= len &lt;= string-&gt;size - pos </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>源串 </td></tr>
+    <tr><td class="paramname">pos</td><td>取子串的起始位置 </td></tr>
+    <tr><td class="paramname">len</td><td>要取的子串的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>取出的子串 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>取子串失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="str_8c_source.html">str.c</a> 第 <a class="el" href="str_8c_source.html#l00217">217</a> 行定义.</p>
+
+<p>参考 <a class="el" href="str_8h_source.html#l00032">__str::data</a> , 以及 <a class="el" href="str_8h_source.html#l00042">__str::size</a>.</p>
+
+<p>参考自 <a class="el" href="main_8c_source.html#l00008">main()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="str_8c_a236b399104c543782e59cbae48239158_icgraph.png" border="0" usemap="#str_8c_a236b399104c543782e59cbae48239158_icgraph" alt=""/></div>
+<map name="str_8c_a236b399104c543782e59cbae48239158_icgraph" id="str_8c_a236b399104c543782e59cbae48239158_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="119,5,169,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3626fa24880620b7f1cffd2b3442ca73.html">str</a></li><li class="navelem"><a class="el" href="str_8c.html">str.c</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

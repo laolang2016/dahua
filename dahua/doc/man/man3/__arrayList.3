@@ -1,0 +1,71 @@
+.TH "__arrayList" 3 "2015年 十月 26日 星期一" "Version 1.0" "dahua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__arrayList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ArrayList\&.h>\fP
+.SS "成员变量"
+
+.in +1c
+.ti -1c
+.RI "\fBElemType\fP * \fBdata\fP"
+.br
+.RI "\fI数组指针 \fP"
+.ti -1c
+.RI "int \fBlength\fP"
+.br
+.RI "\fI表容量 \fP"
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.RI "\fI数据个数 \fP"
+.ti -1c
+.RI "double \fBexpand\fP"
+.br
+.RI "\fI默认扩充比例 \fP"
+.in -1c
+.SH "详细描述"
+.PP 
+在文件 ArrayList\&.h 第 26 行定义\&.
+.SH "结构体成员变量说明"
+.PP 
+.SS "\fBElemType\fP* __arrayList::data"
+
+.PP
+数组指针 
+.PP
+在文件 ArrayList\&.h 第 28 行定义\&.
+.PP
+参考自 array_list_append(), array_list_delete(), array_list_expand(), array_list_get_elem(), array_list_init() , 以及 array_list_insert()\&.
+.SS "double __arrayList::expand"
+
+.PP
+默认扩充比例 
+.PP
+在文件 ArrayList\&.h 第 37 行定义\&.
+.PP
+参考自 array_list_expand() , 以及 array_list_init()\&.
+.SS "int __arrayList::length"
+
+.PP
+表容量 
+.PP
+在文件 ArrayList\&.h 第 31 行定义\&.
+.PP
+参考自 array_list_append(), array_list_expand(), array_list_init() , 以及 array_list_insert()\&.
+.SS "int __arrayList::size"
+
+.PP
+数据个数 
+.PP
+在文件 ArrayList\&.h 第 34 行定义\&.
+.PP
+参考自 array_list_append(), array_list_clear(), array_list_delete(), array_list_get_elem(), array_list_init(), array_list_insert(), array_list_is_empty() , 以及 array_list_size()\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 dahua 的 源代码自动生成\&.
